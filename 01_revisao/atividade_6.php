@@ -1,15 +1,21 @@
 <?php
-$notas_alunos = [
-    gabriela => 5.0
-    joao => 8.5
-    rafael => 9.1
-    joana => 5.0
 
-]
+$aluno = [
+    "Rafael" => 8.0,
+    "Felipe" =>7.0,
+    "Rodrigo" => 10.0,
+    "Jonas" => 2.0,
+    "Daniel" => 7.0
+];
 
-media = 0;
-foreach ($notas_alunos, as $nome => $nota){ 
-    echo ("O aluno $nome tirou a nota $media  <br>")
+$media = 0;
+
+foreach ($aluno as $nome => $nota){
+    echo" O aluno $nome, tirou a nota $media <br>";
+    $media += $nota;
 }
-$media = $media + $notas_alunos /4
-echo $media
+
+$media = $media / 6;
+echo "A media da turma é: $media";
+
+?>
