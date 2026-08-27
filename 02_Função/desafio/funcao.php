@@ -17,3 +17,15 @@ function calcularPedido($nomeProduto, $precoUnitario, $quantidade, $desconto = 0
 
 
 ?>
+
+
+
+<?php
+
+function CalculoFrete($valorTotal){
+    $frete = $valorTotal * (10/100);
+    $TotalComFrete = $frete + $valorTotal;
+    return $TotalComFrete;
+}
+
+?>
