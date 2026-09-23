@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Calculadora</h1>
+    <img src="https://store.steampowered.com/app/4358690/Graveyard_Keeper_2?snr=1_4_4__118&snr=1_4_4__118" alt="Calculadora">
 
     <form action="logica.php" method="POST">
         <label for="">Primeiro Número:</label>
