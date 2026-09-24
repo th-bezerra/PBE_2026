@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Relatório de Compras</title>
 </head>
-<body>
+<body style="background-color: black; color: white;">
 
 	<h1>Relatório de Compras</h1>
 
@@ -22,7 +22,7 @@
 
 	<h2>Pagamento</h2>
 
-	<p><b>Tipo de Pagamento:</b> <?= $tipo_de_pagamento ?></p>
+	    <p><b>Tipo de Pagamento:</b> <?= $tipo_de_pagamento ?></p>
 
 	<h2>Resumo da Compra</h2>
 
