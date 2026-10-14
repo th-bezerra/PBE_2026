@@ -1,7 +1,7 @@
 <?php
 
-class Aluno
-{
+class Aluno{
+
     private $nome;
     private $nota;
 
@@ -15,15 +15,18 @@ class Aluno
     {
         if ($this->nota >= 6) {
             return "Aprovado";
-        }
+        }else{
         return "Reprovado";
     }
 }
+}
 
 $aluno1 = new Aluno("Maria", 8);
-$aluno2 = new Aluno("Mariana");
+$aluno2 = new Aluno("Rickelmy", 10);
 
 echo "<pre>";
 print_r($aluno1);
 print_r($aluno2);
 echo "</pre>";
+
+?>
