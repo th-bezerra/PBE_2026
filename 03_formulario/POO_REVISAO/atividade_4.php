@@ -22,7 +22,7 @@ class Paciente{
 
         if ($imc < 18.5) {
             return "Baixo";
-        } elseif ($imc < 25) {
+        } elseif ($imc < 25) { 
             return "Normal";
         } elseif ($imc < 30) {
             return "Sobrepeso";
@@ -34,11 +34,12 @@ class Paciente{
         echo "Paciente: " . $this->nome . "<br>";
         echo "Idade: " . $this->idade . " anos<br>";
         echo "IMC: " . number_format($this->calcularIMC(), 2) . "<br>";
-        echo "Classificação: " . $this->classificarIMC() . "<br>";
+        echo "Classificação: " . $this->classificarIMC() . "<br><br>";
     }
 }
 
 $paciente = new Paciente("Gabriel", 30, 69, 1.70);
 $paciente->exibirFicha();
-
+$paciente2 = new Paciente("Leonardo", 25, 58, 1.82);
+$paciente2->exibirFicha();
 ?>
