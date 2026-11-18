@@ -1,0 +1,21 @@
+<?php
+
+require_once "Aluno.php";
+require_once "Matricula.php";
+
+$nome = $_POST['nome'];
+$peso = $_POST['peso'];
+$altura = $_POST['altura'] ?? 0;
+// Se o campo nao existir assumir o valor de 0
+$plano = $_POST['plano'];
+$meses = $_POST['meses'];
+
+$modalidades = $_POST['modalidades'] ?? [];
+// ?? -> Faz com que se a lista/array não existir, criar uma vazia
+
+$aluno = new Aluno($nome, $peso, $altura);
+$matricula = new Matricula($aluno, $plano, $meses, $modalidades);
+
+require_once "view_relatorio.php";
+
+?>
